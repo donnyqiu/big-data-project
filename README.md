@@ -1,11 +1,14 @@
+## 项目说明
+vit-b-16在cifar-100上进行微调
+
 ## 项目结构
 - logs 存放训练日志 有时间数据
 - plot 存放损失和准确率图像
 
 ## 方法
 - local 单机单卡训练
-- data_parallel 单机多卡+“多机多卡”训练 数据并行
-- model_parallel 单机多卡 模型并行
+- data_parallel 单机多卡+“多机多卡”训练 数据并行 pytorch DDP
+- model_parallel 单机多卡 模型并行 拆分模型 详细拆分可见train.py
 
 
 ### 多机多卡环境模拟：
