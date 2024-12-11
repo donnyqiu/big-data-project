@@ -1,0 +1,250 @@
+2024-12-10 20:23:19,794 - [Epoch 1] Train Loss: 3.5453
+2024-12-10 20:23:19,794 - [Epoch 1] Train Accuracy: 0.3053
+2024-12-10 20:23:19,794 - [Epoch 1] Test Loss: 2.1350
+2024-12-10 20:23:19,794 - [Epoch 1] Test Accuracy: 0.3053
+2024-12-10 20:23:19,795 - finish epoch 1
+2024-12-10 20:25:55,964 - [Epoch 2] Train Loss: 1.9694
+2024-12-10 20:25:55,964 - [Epoch 2] Train Accuracy: 0.5757
+2024-12-10 20:25:55,964 - [Epoch 2] Test Loss: 1.1869
+2024-12-10 20:25:55,964 - [Epoch 2] Test Accuracy: 0.5757
+2024-12-10 20:25:55,964 - finish epoch 2
+2024-12-10 20:28:28,729 - [Epoch 3] Train Loss: 1.4989
+2024-12-10 20:28:28,729 - [Epoch 3] Train Accuracy: 0.6300
+2024-12-10 20:28:28,729 - [Epoch 3] Test Loss: 0.9054
+2024-12-10 20:28:28,729 - [Epoch 3] Test Accuracy: 0.6300
+2024-12-10 20:28:28,729 - finish epoch 3
+2024-12-10 20:31:01,418 - [Epoch 4] Train Loss: 1.3339
+2024-12-10 20:31:01,419 - [Epoch 4] Train Accuracy: 0.6562
+2024-12-10 20:31:01,419 - [Epoch 4] Test Loss: 0.7809
+2024-12-10 20:31:01,419 - [Epoch 4] Test Accuracy: 0.6562
+2024-12-10 20:31:01,419 - finish epoch 4
+2024-12-10 20:33:32,805 - [Epoch 5] Train Loss: 1.2144
+2024-12-10 20:33:32,805 - [Epoch 5] Train Accuracy: 0.6762
+2024-12-10 20:33:32,806 - [Epoch 5] Test Loss: 0.7125
+2024-12-10 20:33:32,806 - [Epoch 5] Test Accuracy: 0.6762
+2024-12-10 20:33:32,806 - finish epoch 5
+2024-12-10 20:36:02,307 - [Epoch 6] Train Loss: 1.1386
+2024-12-10 20:36:02,307 - [Epoch 6] Train Accuracy: 0.6998
+2024-12-10 20:36:02,307 - [Epoch 6] Test Loss: 0.6639
+2024-12-10 20:36:02,307 - [Epoch 6] Test Accuracy: 0.6998
+2024-12-10 20:36:02,307 - finish epoch 6
+2024-12-10 20:38:36,836 - [Epoch 7] Train Loss: 1.0941
+2024-12-10 20:38:36,836 - [Epoch 7] Train Accuracy: 0.7054
+2024-12-10 20:38:36,836 - [Epoch 7] Test Loss: 0.6313
+2024-12-10 20:38:36,836 - [Epoch 7] Test Accuracy: 0.7054
+2024-12-10 20:38:36,836 - finish epoch 7
+2024-12-10 20:41:19,722 - [Epoch 8] Train Loss: 1.0611
+2024-12-10 20:41:19,722 - [Epoch 8] Train Accuracy: 0.7061
+2024-12-10 20:41:19,723 - [Epoch 8] Test Loss: 0.6063
+2024-12-10 20:41:19,723 - [Epoch 8] Test Accuracy: 0.7061
+2024-12-10 20:41:19,723 - finish epoch 8
+2024-12-10 20:43:59,125 - [Epoch 9] Train Loss: 1.0666
+2024-12-10 20:43:59,126 - [Epoch 9] Train Accuracy: 0.7098
+2024-12-10 20:43:59,126 - [Epoch 9] Test Loss: 0.5857
+2024-12-10 20:43:59,126 - [Epoch 9] Test Accuracy: 0.7098
+2024-12-10 20:43:59,126 - finish epoch 9
+2024-12-10 20:46:38,826 - [Epoch 10] Train Loss: 1.0106
+2024-12-10 20:46:38,827 - [Epoch 10] Train Accuracy: 0.7248
+2024-12-10 20:46:38,827 - [Epoch 10] Test Loss: 0.5712
+2024-12-10 20:46:38,827 - [Epoch 10] Test Accuracy: 0.7248
+2024-12-10 20:46:38,827 - finish epoch 10
+2024-12-10 20:49:14,026 - [Epoch 11] Train Loss: 0.9966
+2024-12-10 20:49:14,026 - [Epoch 11] Train Accuracy: 0.7245
+2024-12-10 20:49:14,026 - [Epoch 11] Test Loss: 0.5576
+2024-12-10 20:49:14,027 - [Epoch 11] Test Accuracy: 0.7245
+2024-12-10 20:49:14,027 - finish epoch 11
+2024-12-10 20:51:44,417 - [Epoch 12] Train Loss: 0.9715
+2024-12-10 20:51:44,417 - [Epoch 12] Train Accuracy: 0.7333
+2024-12-10 20:51:44,417 - [Epoch 12] Test Loss: 0.5467
+2024-12-10 20:51:44,417 - [Epoch 12] Test Accuracy: 0.7333
+2024-12-10 20:51:44,417 - finish epoch 12
+2024-12-10 20:54:16,083 - [Epoch 13] Train Loss: 0.9549
+2024-12-10 20:54:16,084 - [Epoch 13] Train Accuracy: 0.7378
+2024-12-10 20:54:16,084 - [Epoch 13] Test Loss: 0.5362
+2024-12-10 20:54:16,084 - [Epoch 13] Test Accuracy: 0.7378
+2024-12-10 20:54:16,084 - finish epoch 13
+2024-12-10 20:56:46,259 - [Epoch 14] Train Loss: 0.9341
+2024-12-10 20:56:46,260 - [Epoch 14] Train Accuracy: 0.7473
+2024-12-10 20:56:46,260 - [Epoch 14] Test Loss: 0.5265
+2024-12-10 20:56:46,260 - [Epoch 14] Test Accuracy: 0.7473
+2024-12-10 20:56:46,260 - finish epoch 14
+2024-12-10 20:59:14,155 - [Epoch 15] Train Loss: 0.9265
+2024-12-10 20:59:14,155 - [Epoch 15] Train Accuracy: 0.7421
+2024-12-10 20:59:14,155 - [Epoch 15] Test Loss: 0.5216
+2024-12-10 20:59:14,155 - [Epoch 15] Test Accuracy: 0.7421
+2024-12-10 20:59:14,155 - finish epoch 15
+2024-12-10 21:01:44,992 - [Epoch 16] Train Loss: 0.9146
+2024-12-10 21:01:44,992 - [Epoch 16] Train Accuracy: 0.7413
+2024-12-10 21:01:44,992 - [Epoch 16] Test Loss: 0.5134
+2024-12-10 21:01:44,992 - [Epoch 16] Test Accuracy: 0.7413
+2024-12-10 21:01:44,992 - finish epoch 16
+2024-12-10 21:04:15,242 - [Epoch 17] Train Loss: 0.8989
+2024-12-10 21:04:15,242 - [Epoch 17] Train Accuracy: 0.7483
+2024-12-10 21:04:15,242 - [Epoch 17] Test Loss: 0.5046
+2024-12-10 21:04:15,242 - [Epoch 17] Test Accuracy: 0.7483
+2024-12-10 21:04:15,242 - finish epoch 17
+2024-12-10 21:06:44,490 - [Epoch 18] Train Loss: 0.8791
+2024-12-10 21:06:44,490 - [Epoch 18] Train Accuracy: 0.7588
+2024-12-10 21:06:44,490 - [Epoch 18] Test Loss: 0.4983
+2024-12-10 21:06:44,491 - [Epoch 18] Test Accuracy: 0.7588
+2024-12-10 21:06:44,491 - finish epoch 18
+2024-12-10 21:09:11,878 - [Epoch 19] Train Loss: 0.8595
+2024-12-10 21:09:11,879 - [Epoch 19] Train Accuracy: 0.7599
+2024-12-10 21:09:11,879 - [Epoch 19] Test Loss: 0.4943
+2024-12-10 21:09:11,879 - [Epoch 19] Test Accuracy: 0.7599
+2024-12-10 21:09:11,879 - finish epoch 19
+2024-12-10 21:11:42,352 - [Epoch 20] Train Loss: 0.8484
+2024-12-10 21:11:42,352 - [Epoch 20] Train Accuracy: 0.7616
+2024-12-10 21:11:42,352 - [Epoch 20] Test Loss: 0.4892
+2024-12-10 21:11:42,352 - [Epoch 20] Test Accuracy: 0.7616
+2024-12-10 21:11:42,353 - finish epoch 20
+2024-12-10 21:14:10,957 - [Epoch 21] Train Loss: 0.8229
+2024-12-10 21:14:10,958 - [Epoch 21] Train Accuracy: 0.7714
+2024-12-10 21:14:10,958 - [Epoch 21] Test Loss: 0.4866
+2024-12-10 21:14:10,958 - [Epoch 21] Test Accuracy: 0.7714
+2024-12-10 21:14:10,958 - finish epoch 21
+2024-12-10 21:16:37,520 - [Epoch 22] Train Loss: 0.8558
+2024-12-10 21:16:37,520 - [Epoch 22] Train Accuracy: 0.7644
+2024-12-10 21:16:37,520 - [Epoch 22] Test Loss: 0.4833
+2024-12-10 21:16:37,520 - [Epoch 22] Test Accuracy: 0.7644
+2024-12-10 21:16:37,520 - finish epoch 22
+2024-12-10 21:19:06,559 - [Epoch 23] Train Loss: 0.8501
+2024-12-10 21:19:06,560 - [Epoch 23] Train Accuracy: 0.7633
+2024-12-10 21:19:06,560 - [Epoch 23] Test Loss: 0.4807
+2024-12-10 21:19:06,560 - [Epoch 23] Test Accuracy: 0.7633
+2024-12-10 21:19:06,560 - finish epoch 23
+2024-12-10 21:21:34,351 - [Epoch 24] Train Loss: 0.8285
+2024-12-10 21:21:34,351 - [Epoch 24] Train Accuracy: 0.7696
+2024-12-10 21:21:34,351 - [Epoch 24] Test Loss: 0.4791
+2024-12-10 21:21:34,352 - [Epoch 24] Test Accuracy: 0.7696
+2024-12-10 21:21:34,352 - finish epoch 24
+2024-12-10 21:24:02,060 - [Epoch 25] Train Loss: 0.8072
+2024-12-10 21:24:02,061 - [Epoch 25] Train Accuracy: 0.7726
+2024-12-10 21:24:02,061 - [Epoch 25] Test Loss: 0.4754
+2024-12-10 21:24:02,061 - [Epoch 25] Test Accuracy: 0.7726
+2024-12-10 21:24:02,061 - finish epoch 25
+2024-12-10 21:26:29,714 - [Epoch 26] Train Loss: 0.8160
+2024-12-10 21:26:29,715 - [Epoch 26] Train Accuracy: 0.7764
+2024-12-10 21:26:29,715 - [Epoch 26] Test Loss: 0.4720
+2024-12-10 21:26:29,715 - [Epoch 26] Test Accuracy: 0.7764
+2024-12-10 21:26:29,715 - finish epoch 26
+2024-12-10 21:28:55,287 - [Epoch 27] Train Loss: 0.7913
+2024-12-10 21:28:55,287 - [Epoch 27] Train Accuracy: 0.7773
+2024-12-10 21:28:55,288 - [Epoch 27] Test Loss: 0.4687
+2024-12-10 21:28:55,288 - [Epoch 27] Test Accuracy: 0.7773
+2024-12-10 21:28:55,288 - finish epoch 27
+2024-12-10 21:31:22,826 - [Epoch 28] Train Loss: 0.7958
+2024-12-10 21:31:22,826 - [Epoch 28] Train Accuracy: 0.7775
+2024-12-10 21:31:22,826 - [Epoch 28] Test Loss: 0.4652
+2024-12-10 21:31:22,826 - [Epoch 28] Test Accuracy: 0.7775
+2024-12-10 21:31:22,826 - finish epoch 28
+2024-12-10 21:33:50,189 - [Epoch 29] Train Loss: 0.7647
+2024-12-10 21:33:50,189 - [Epoch 29] Train Accuracy: 0.7809
+2024-12-10 21:33:50,189 - [Epoch 29] Test Loss: 0.4602
+2024-12-10 21:33:50,189 - [Epoch 29] Test Accuracy: 0.7809
+2024-12-10 21:33:50,189 - finish epoch 29
+2024-12-10 21:36:19,065 - [Epoch 30] Train Loss: 0.7968
+2024-12-10 21:36:19,065 - [Epoch 30] Train Accuracy: 0.7801
+2024-12-10 21:36:19,065 - [Epoch 30] Test Loss: 0.4576
+2024-12-10 21:36:19,065 - [Epoch 30] Test Accuracy: 0.7801
+2024-12-10 21:36:19,066 - finish epoch 30
+2024-12-10 21:38:44,748 - [Epoch 31] Train Loss: 0.7680
+2024-12-10 21:38:44,748 - [Epoch 31] Train Accuracy: 0.7841
+2024-12-10 21:38:44,749 - [Epoch 31] Test Loss: 0.4544
+2024-12-10 21:38:44,749 - [Epoch 31] Test Accuracy: 0.7841
+2024-12-10 21:38:44,749 - finish epoch 31
+2024-12-10 21:41:12,492 - [Epoch 32] Train Loss: 0.7426
+2024-12-10 21:41:12,492 - [Epoch 32] Train Accuracy: 0.7882
+2024-12-10 21:41:12,492 - [Epoch 32] Test Loss: 0.4537
+2024-12-10 21:41:12,492 - [Epoch 32] Test Accuracy: 0.7882
+2024-12-10 21:41:12,492 - finish epoch 32
+2024-12-10 21:43:37,691 - [Epoch 33] Train Loss: 0.7525
+2024-12-10 21:43:37,692 - [Epoch 33] Train Accuracy: 0.7908
+2024-12-10 21:43:37,692 - [Epoch 33] Test Loss: 0.4511
+2024-12-10 21:43:37,692 - [Epoch 33] Test Accuracy: 0.7908
+2024-12-10 21:43:37,692 - finish epoch 33
+2024-12-10 21:46:03,492 - [Epoch 34] Train Loss: 0.7614
+2024-12-10 21:46:03,493 - [Epoch 34] Train Accuracy: 0.7816
+2024-12-10 21:46:03,493 - [Epoch 34] Test Loss: 0.4484
+2024-12-10 21:46:03,493 - [Epoch 34] Test Accuracy: 0.7816
+2024-12-10 21:46:03,493 - finish epoch 34
+2024-12-10 21:48:29,814 - [Epoch 35] Train Loss: 0.7371
+2024-12-10 21:48:29,814 - [Epoch 35] Train Accuracy: 0.7880
+2024-12-10 21:48:29,814 - [Epoch 35] Test Loss: 0.4474
+2024-12-10 21:48:29,814 - [Epoch 35] Test Accuracy: 0.7880
+2024-12-10 21:48:29,814 - finish epoch 35
+2024-12-10 21:50:54,577 - [Epoch 36] Train Loss: 0.7514
+2024-12-10 21:50:54,578 - [Epoch 36] Train Accuracy: 0.7866
+2024-12-10 21:50:54,578 - [Epoch 36] Test Loss: 0.4458
+2024-12-10 21:50:54,578 - [Epoch 36] Test Accuracy: 0.7866
+2024-12-10 21:50:54,578 - finish epoch 36
+2024-12-10 21:53:17,609 - [Epoch 37] Train Loss: 0.7420
+2024-12-10 21:53:17,609 - [Epoch 37] Train Accuracy: 0.7924
+2024-12-10 21:53:17,609 - [Epoch 37] Test Loss: 0.4458
+2024-12-10 21:53:17,609 - [Epoch 37] Test Accuracy: 0.7924
+2024-12-10 21:53:17,609 - finish epoch 37
+2024-12-10 21:55:43,665 - [Epoch 38] Train Loss: 0.7464
+2024-12-10 21:55:43,665 - [Epoch 38] Train Accuracy: 0.7897
+2024-12-10 21:55:43,665 - [Epoch 38] Test Loss: 0.4453
+2024-12-10 21:55:43,665 - [Epoch 38] Test Accuracy: 0.7897
+2024-12-10 21:55:43,665 - finish epoch 38
+2024-12-10 21:58:10,653 - [Epoch 39] Train Loss: 0.7323
+2024-12-10 21:58:10,654 - [Epoch 39] Train Accuracy: 0.7928
+2024-12-10 21:58:10,654 - [Epoch 39] Test Loss: 0.4421
+2024-12-10 21:58:10,654 - [Epoch 39] Test Accuracy: 0.7928
+2024-12-10 21:58:10,654 - finish epoch 39
+2024-12-10 22:00:36,318 - [Epoch 40] Train Loss: 0.7366
+2024-12-10 22:00:36,319 - [Epoch 40] Train Accuracy: 0.7992
+2024-12-10 22:00:36,319 - [Epoch 40] Test Loss: 0.4395
+2024-12-10 22:00:36,319 - [Epoch 40] Test Accuracy: 0.7992
+2024-12-10 22:00:36,319 - finish epoch 40
+2024-12-10 22:03:02,393 - [Epoch 41] Train Loss: 0.7563
+2024-12-10 22:03:02,393 - [Epoch 41] Train Accuracy: 0.7915
+2024-12-10 22:03:02,393 - [Epoch 41] Test Loss: 0.4384
+2024-12-10 22:03:02,393 - [Epoch 41] Test Accuracy: 0.7915
+2024-12-10 22:03:02,393 - finish epoch 41
+2024-12-10 22:05:26,775 - [Epoch 42] Train Loss: 0.7191
+2024-12-10 22:05:26,775 - [Epoch 42] Train Accuracy: 0.7956
+2024-12-10 22:05:26,775 - [Epoch 42] Test Loss: 0.4387
+2024-12-10 22:05:26,775 - [Epoch 42] Test Accuracy: 0.7956
+2024-12-10 22:05:26,775 - finish epoch 42
+2024-12-10 22:07:58,878 - [Epoch 43] Train Loss: 0.7126
+2024-12-10 22:07:58,878 - [Epoch 43] Train Accuracy: 0.7970
+2024-12-10 22:07:58,878 - [Epoch 43] Test Loss: 0.4389
+2024-12-10 22:07:58,878 - [Epoch 43] Test Accuracy: 0.7970
+2024-12-10 22:07:58,878 - finish epoch 43
+2024-12-10 22:10:25,530 - [Epoch 44] Train Loss: 0.7063
+2024-12-10 22:10:25,530 - [Epoch 44] Train Accuracy: 0.7985
+2024-12-10 22:10:25,531 - [Epoch 44] Test Loss: 0.4385
+2024-12-10 22:10:25,531 - [Epoch 44] Test Accuracy: 0.7985
+2024-12-10 22:10:25,531 - finish epoch 44
+2024-12-10 22:12:58,519 - [Epoch 45] Train Loss: 0.6947
+2024-12-10 22:12:58,519 - [Epoch 45] Train Accuracy: 0.8053
+2024-12-10 22:12:58,519 - [Epoch 45] Test Loss: 0.4366
+2024-12-10 22:12:58,520 - [Epoch 45] Test Accuracy: 0.8053
+2024-12-10 22:12:58,520 - finish epoch 45
+2024-12-10 22:15:22,674 - [Epoch 46] Train Loss: 0.6878
+2024-12-10 22:15:22,675 - [Epoch 46] Train Accuracy: 0.8030
+2024-12-10 22:15:22,675 - [Epoch 46] Test Loss: 0.4334
+2024-12-10 22:15:22,675 - [Epoch 46] Test Accuracy: 0.8030
+2024-12-10 22:15:22,675 - finish epoch 46
+2024-12-10 22:17:54,579 - [Epoch 47] Train Loss: 0.6760
+2024-12-10 22:17:54,579 - [Epoch 47] Train Accuracy: 0.8082
+2024-12-10 22:17:54,579 - [Epoch 47] Test Loss: 0.4344
+2024-12-10 22:17:54,579 - [Epoch 47] Test Accuracy: 0.8082
+2024-12-10 22:17:54,579 - finish epoch 47
+2024-12-10 22:20:24,615 - [Epoch 48] Train Loss: 0.6955
+2024-12-10 22:20:24,615 - [Epoch 48] Train Accuracy: 0.8075
+2024-12-10 22:20:24,616 - [Epoch 48] Test Loss: 0.4319
+2024-12-10 22:20:24,616 - [Epoch 48] Test Accuracy: 0.8075
+2024-12-10 22:20:24,616 - finish epoch 48
+2024-12-10 22:22:46,320 - [Epoch 49] Train Loss: 0.6637
+2024-12-10 22:22:46,321 - [Epoch 49] Train Accuracy: 0.8146
+2024-12-10 22:22:46,321 - [Epoch 49] Test Loss: 0.4280
+2024-12-10 22:22:46,321 - [Epoch 49] Test Accuracy: 0.8146
+2024-12-10 22:22:46,321 - finish epoch 49
+2024-12-10 22:24:20,797 - [Epoch 50] Train Loss: 0.6799
+2024-12-10 22:24:20,797 - [Epoch 50] Train Accuracy: 0.8092
+2024-12-10 22:24:20,797 - [Epoch 50] Test Loss: 0.4295
+2024-12-10 22:24:20,797 - [Epoch 50] Test Accuracy: 0.8092
+2024-12-10 22:24:20,797 - finish epoch 50

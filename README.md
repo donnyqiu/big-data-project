@@ -2,36 +2,26 @@
 vit-b-16在cifar-100上进行微调
 
 ## 项目结构
-- logs 存放训练日志 有时间数据
+- logs 存放训练+推理日志 可以看时间数据
 - plot 存放损失和准确率图像
+- gpu_usage 存放GPU利用
 
 ## 方法
-- local 单机单卡训练
-- data_parallel 单机多卡+“多机多卡”训练 数据并行 pytorch DDP
+- local 单机单卡训练 即非分布式训练
+    - 源代码：train.py
+- data_parallel_dp 单机多卡训练 数据并行
+    - 方法：pytorch DataParallel 简称 DP
+    - 源代码：train.py
+- data_parallel_ddp “多机多卡”训练 数据并行
+    - 方法：pytorch DistributedDataParallel 简称 DDP (all-reduce的collective架构 + nccl)
+    - 源代码：train.py
+    - 其中“多机多卡”其实就是用多进程模拟 每个进程一张卡 底层还是使用nccl进行通信
+    - 实验中只有多进程模拟的训练结果
 - model_parallel 单机多卡 模型并行 拆分模型 详细拆分可见train.py
+- parameter_server “多机多卡”训练 数据并行
+    - 方法：parameter server模式 利用pytorch rpc通信框架实现
+    - 源代码：parameter_server.py
 
 
-### 多机多卡环境模拟：
-1机7卡模拟2机7卡
-只在数据并行上做
-
-- 节点1：4GPU
-- 节点2：3GPU
-
-使用数据并行 每个GPU上部署一个模型
-
-使用torchrun模拟
-- 模拟第一台机器
-```
-NODE_RANK=0 NPROC_PER_NODE=4 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nnodes=2 --node_rank=0 --nproc_per_node=4 main.py --master_addr="127.0.0.1" --master_port=12355
-```
-
-- 模拟第二台机器
-```
-NODE_RANK=1 NPROC_PER_NODE=3 CUDA_VISIBLE_DEVICES=4,5,6 torchrun --nnodes=2 --node_rank=1 --nproc_per_node=3 main.py --master_addr="127.0.0.1" --master_port=12355
-```
-
-效果和单机多卡没有本质区别 直接使用data_parallel单机多卡的logs和plot即可
-
-### 待实验
-缓存组件的使用
+## 核心指标
+- 训练时间：每个Epoch的训练时间
