@@ -21,10 +21,10 @@ def main(rank, world_size):
 
 if __name__ == "__main__":
     world_size = torch.cuda.device_count()
-    if Config.DISTRIBUTED == "data_parallel":
+    if Config.DISTRIBUTED == "data_parallel_ddp":
         mp.spawn(
             main,
-            args=(world_size,),
+            args=(world_size, ),
             nprocs=world_size,
             join=True)
     else:

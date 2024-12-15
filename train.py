@@ -47,18 +47,18 @@ class Trainer:
         self.test_losses = []
         self.test_accuracies = []
 
-        if self.distributed == "data_parallel":
+        if self.distributed == "data_parallel_ddp":
             self.setup()
 
-        self.device = torch.device(f'cuda:{self.rank}' if self.distributed == "data_parallel" and self.rank >= 0 else 'cuda:0')
+        self.device = torch.device(f'cuda:{self.rank}' if self.distributed == "data_parallel_ddp" and self.rank >= 0 else "cuda" if self.distributed == "data_parallel_dp" else "cuda:0")
         self.get_model_to_device()
 
         self.train_dataloader, self.test_dataloader = self.get_dataloaders()
 
         self.criterion = nn.CrossEntropyLoss().to(self.device)
         self.optimizer = optim.AdamW([
-            {'params': self.model.module.encoder.parameters() if self.distributed == "data_parallel" else self.model.encoder.parameters(), 'lr': self.encoder_lr},
-            {'params': self.model.module.heads.parameters() if self.distributed == "data_parallel" else self.model.heads.parameters(), 'lr': self.head_lr}
+            {'params': self.model.module.encoder.parameters() if self.distributed == "data_parallel_ddp" or self.distributed == "data_parallel_dp" else self.model.encoder.parameters(), 'lr': self.encoder_lr},
+            {'params': self.model.module.heads.parameters() if self.distributed == "data_parallel_ddp" or self.distributed == "data_parallel_dp" else self.model.heads.parameters(), 'lr': self.head_lr}
         ])
         self.scheduler = StepLR(self.optimizer, step_size=10, gamma=0.2)
 
@@ -85,7 +85,7 @@ class Trainer:
         train_dataset = torchvision.datasets.CIFAR100(root=self.data_root, train=True, download=True, transform=train_transform)
         test_dataset = torchvision.datasets.CIFAR100(root=self.data_root, train=False, download=True, transform=test_transform)
 
-        if self.distributed == "data_parallel":
+        if self.distributed == "data_parallel_ddp":
             train_sampler = DistributedSampler(train_dataset, num_replicas=self.world_size, rank=self.rank, shuffle=True)
             test_sampler = DistributedSampler(test_dataset, num_replicas=self.world_size, rank=self.rank, shuffle=False)
         else:
@@ -101,9 +101,12 @@ class Trainer:
         self.model = get_model()
         if self.distributed == "local":
             self.model.to(self.device)
-        elif self.distributed == "data_parallel":
+        elif self.distributed == "data_parallel_ddp":
             self.model.to(self.device)
             self.model = DDP(self.model, device_ids=[self.rank])
+        elif self.distributed == "data_parallel_dp":
+            self.model = nn.DataParallel(self.model)
+            self.model = self.model.to(self.device)
         elif self.distributed == "model_parallel":
             device_ids = list(range(self.world_size))
             self.model.conv_proj = self.model.conv_proj.to(f'cuda:0')
@@ -164,7 +167,7 @@ class Trainer:
 
     def train(self):
         for epoch in range(self.epochs):
-            if self.distributed == "data_parallel":
+            if self.distributed == "data_parallel_ddp":
                 self.train_dataloader.sampler.set_epoch(epoch)
 
             self.model.train()
@@ -194,7 +197,7 @@ class Trainer:
             train_loss, train_accuracy = running_loss / len(self.train_dataloader), correct / total
             test_loss, test_accuracy = self.evaluate(self.test_dataloader)
 
-            if not self.distributed == "data_parallel" or self.rank == 0:
+            if not self.distributed == "data_parallel_ddp" or self.rank == 0:
                 self.logger.info(f'[Epoch {epoch+1}] Train Loss: {train_loss:.4f}')
                 self.logger.info(f'[Epoch {epoch+1}] Train Accuracy: {train_accuracy:.4f}')
                 self.logger.info(f'[Epoch {epoch+1}] Test Loss: {test_loss:.4f}')
@@ -206,15 +209,15 @@ class Trainer:
                 self.test_accuracies.append(test_accuracy)
 
                 if (epoch + 1) % 5 == 0:
-                    if self.distributed == "data_parallel":
+                    if self.distributed == "data_parallel_ddp" or self.distributed == "data_parallel_dp":
                         torch.save(self.model.module.state_dict(), self.save_model_path + "/epoch_" + str(epoch+1) + "_model.pth")
                     else:
                         torch.save(self.model.state_dict(), self.save_model_path + "/epoch_" + str(epoch+1) + "_model.pth")
         
-        if self.distributed == "data_parallel":
+        if self.distributed == "data_parallel_ddp":
             self.cleanup()
 
-        if not self.distributed == "data_parallel" or self.rank == 0:
+        if not self.distributed == "data_parallel_ddp" or self.rank == 0:
             self.plot_loss_accuracy()
 
     def evaluate(self, dataloader):
